@@ -5,45 +5,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <title>Recetario</title>
+    <link href="estilo.css" rel="stylesheet" />
 </head>
 
 
 <body>
-    <header>
-        <!-- <img src="img/banner_2.png" width="100%" /> -->
-        <h1>Recetas</h1>
+    <header id="header_1">
+        <h1>Recetario</h1>
+        <nav>
+            <span id="span_nav">Recetas</span>
+            <ul id="ul_nav">
+                <li><a href="#comida_1" rel="next">Arroz</a></li>
+                <li><a href="#comida_2" rel="next">Huevo estrellado</a></li>
+                <li><a href="#comida_3" rel="next">Huevo con jamos</a></li>
+                <li><a href="#comida_4" rel="next">Tostadas de atun</a></li>
+                <li><a href="#comida_5" rel="next">Tortitas de atun y avena</a></li>
+                <li><a href="#postre_1" rel="next">Gelatina con yogurt</a></li>
+                <li><a href="#postre_2" rel="next">Pay de limon</a></li>
+                <li><a href="#postre_3" rel="next">Fresas con crema</a></li>
+                <li><a href="#postre_4" rel="next">Ensalada de manzana</a></li>
+                <li><a href="#postre_5" rel="next">Arroz con leche</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-
-    </nav>
     <aside>
 
     </aside>
 
 
-    <div class="comidas">
+    <section class="recetas" id="recetas_comidas">
         <header>
             <h2>Comidas</h2>
         </header>
-
-        <div id="comida_1">
-            <h3>Arroz</h3>
-            <div>
+        <article class="comida" id="comida_1">
+            <header>
+                <h3>Arroz</h3>
+            </header>
+            <div class="ingredientes">
                 <span>Ingredientes:</span>
                 <ul>
-                    <li>3 tazas de arroz</li>
-                    <li>6 vasos con agua</li>
-                    <li>200 gramos de granos de elote</li>
-                    <li>Una ramita de epazote</li>
-                    <li>1 cubo de caldo de pollo</li>
-                    <li>Aceite</li>
-                    <li>Sal</li>
-                    <li>Pimienta</li>
+                    <li>
+                        <div>
+                            <p>tazas de arroz</p>
+                            <img src="RECETARIO/IMAGENES/arroz.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>6 vasos con agua</p>
+                            <img src="RECETARIO/IMAGENES/agua.jpg" width=30% title="Agua" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>200 gramos de granos de elote</p>
+                            <img src="RECETARIO/IMAGENES/elotee.jpg" width=30% title="Elote" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Una ramita de epazote</p>
+                            <img src="RECETARIO/IMAGENES/epazote.jpg" width=30% title="Epazote" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 cubo de caldo de pollo</p>
+                            <img src="RECETARIO/IMAGENES/cubo.jpg" width=30% title="Caldo de pollo" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Aceite</p>
+                            <img src="RECETARIO/IMAGENES/aceite.jpg" width=30% title="Aceite" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Sal</p>
+                            <img src="RECETARIO/IMAGENES/sal.jpg" width=30% title="Sal" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Pimienta</p>
+                            <img src="RECETARIO/IMAGENES/pimienta.jpg" width=30% title="Pimienta" />
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div>
+            <div class="preparacion">
                 <span>Preparacion</span>
                 <ol>
                     <li>Freír el arroz en aceite hasta que tome un color doradito</li>
@@ -54,19 +110,58 @@
                     <li>Esperar a que el arroz se vuelva suave y listo.</li>
                 </ol>
             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento </td>
+                        <td>elemento </td>
+                        <td>elemento </td>
+                        <td>elemento </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td >ajj</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-        </div>
-        <div id="comida_2">
-            <h3>Huevo Estrellado</h3>
-            <div>
+        <article class="comida" id="comida_2">
+            <header>
+                <h3>Huevo Estrellado</h3>
+            </header>
+            <div class="ingredientes">
                 <span>Ingredientes:</span>
                 <ul>
-                    <li>1 huevo</li>
-                    <li>Un poco de aceite</li>
-                    <li>Sal al gusto</li>
+                    <li>
+                        <div>
+                            <p>1 huevo</p>
+                            <img src="RECETARIO/IMAGENES/huevo.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Un poco de aceite</p>
+                            <img src="RECETARIO/IMAGENES/aceite.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Sal al gusto</p>
+                            <img src="RECETARIO/IMAGENES/sal.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div>
+            <div class="preparacion">
                 <span>Preparacion</span>
                 <ol>
                     <li>Calentar el aceite</li>
@@ -74,20 +169,62 @@
                     <li>Dejar freír unos minutos y listo.</li>
                 </ol>
             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento 1</td>
+                        <td>elemento 2</td>
+                        <td>elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-        </div>
-        <div id="comida_3">
-            <h3>Huevo Con Jamon</h3>
-            <div>
+        <article class="comida" id="comida_3">
+            <header>
+                <h3>Huevo Con Jamon</h3>
+            </header>
+            <div class="ingredientes">
                 <span>Ingredientes:</span>
                 <ul>
-                    <li>½ kilo de huevo</li>
-                    <li>Un poco de aceite</li>
-                    <li>Sal al gusto</li>
-                    <li>100 gr de jamón</li>
+                    <li>
+                        <div>
+                            <p>½ kilo de huevo</p>
+                            <img src="RECETARIO/IMAGENES/huevos.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Un poco de aceite</p>
+                            <img src="RECETARIO/IMAGENES/aceite.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Sal al gusto</p>
+                            <img src="RECETARIO/IMAGENES/sal.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>100 gr de jamón</p>
+                            <img src="RECETARIO/IMAGENES/jamon.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div>
+            <div class="preparacion">
                 <span>Preparacion</span>
                 <ol>
                     <li>3 tazas de arroz</li>
@@ -100,21 +237,68 @@
                     <li>Pimienta</li>
                 </ol>
             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento 1</td>
+                        <td>elemento 2</td>
+                        <td>elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-        </div>
-        <div id="comida_4">
-            <h3>Tostadas de atun</h3>
-            <div>
+        <article class="comida" id="comida_4">
+            <header>
+                <h3>Tostadas de atun</h3>
+            </header>
+            <div class="ingredientes">
                 <span>Ingredientes:</span>
                 <ul>
-                    <li>2 latas de atún de agua</li>
-                    <li>1 lata de verdura</li>
-                    <li>½ lechuga</li>
-                    <li>Mayonessa al gusto </li>
-                    <li>Paquete de tostadas</li>
+                    <li>
+                        <div>
+                            <p>2 latas de atún de agua</p>
+                            <img src="RECETARIO/IMAGENES/atún.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 lata de verdura</p>
+                            <img src="RECETARIO/IMAGENES/ensalada.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>½ lechuga</p>
+                            <img src="RECETARIO/IMAGENES/lechuga.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Mayonessa al gusto</p>
+                            <img src="RECETARIO/IMAGENES/mayonessa.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Paquete de tostadas</p>
+                            <img src="RECETARIO/IMAGENES/tostadas.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div>
+            <div class="preparacion">
                 <span>Preparacion</span>
                 <ol>
                     <li>Picar y desinfectar la lechuga</li>
@@ -124,20 +308,62 @@
                     <li>Servir en las tostadas y listo</li>
                 </ol>
             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento 1</td>
+                        <td>elemento 2</td>
+                        <td>elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-        </div>
-        <div id="comida_5">
-            <h3>Tortitas de atun y avena</h3>
-            <div>
+        <article class="comida" id="comida_5">
+            <header>
+                <h3>Tortitas de atun y avena</h3>
+            </header>
+            <div class="ingredientes">
                 <span>Ingredientes:</span>
                 <ul>
-                    <li>2 latas de atún de agua</li>
-                    <li>1 ½ tazas de avena</li>
-                    <li>4 huevos </li>
-                    <li>Un poco de aceite</li>
+                    <li>
+                        <div>
+                            <p>2 latas de atún de agua</p>
+                            <img src="RECETARIO/IMAGENES/atún.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 ½ tazas de avena</p>
+                            <img src="RECETARIO/IMAGENES/avena.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>4 huevos </p>
+                            <img src="RECETARIO/IMAGENES/huevos.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Un poco de aceite</p>
+                            <img src="RECETARIO/IMAGENES/aceite.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div>
+            <div class="preparacion">
                 <span>Preparacion</span>
                 <ol>
                     <li>Escurrir el atún</li>
@@ -146,98 +372,201 @@
                     <li>Poner un poco de aceite en una sartén y cuando esté caliente freír las tortitas</li>
                 </ol>
             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento 1</td>
+                        <td>elemento 2</td>
+                        <td>elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-        </div>
-    </div>
-    <div class="postres">
+    </section>
+
+
+
+
+    <section class="recetas" id="recetas_postres">
         <header>
             <h2>Postres</h2>
         </header>
 
-        <div id="postre_1">
-            <h3>Gelatina con Yogurt</h3>
-            <div>
+        <article class="comida" id="postre_1">
+            <header>
+                <h3>Gelatina con Yogurt</h3>
+            </header>
+            <div class="ingredientes">
                 <span>Ingredientes</span>
                 <ul>
-                    <li>1 gelatina de agua (sabor al gusto)</li>
-                    <li>1 litro de agua</li>
-                    <li>½ de yogurt (sabor al gusto)</li>
+                    <li>
+                        <div>
+                            <p>1 gelatina de agua (sabor al gusto)</p>
+                            <img src="RECETARIO/IMAGENES/gelatina.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 litro de agua</p>
+                            <img src="RECETARIO/IMAGENES/agua.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>½ de yogurt (sabor al gusto)</p>
+                            <img src="RECETARIO/IMAGENES/yogurt.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div>
+            <div class="preparacion">
                 <span>Preparacion</span>
                 <ol>
-                    <li>
-                        Hervir el agua
-                    </li>
-                    <li>
-                        Agregar el polvo de gelatina al agua hirviendo y mover hasta que se mezcle bien el polvo
-                    </li>
-                    <li>
-                        Vaciar la mezcla en un recipiente, esperar a que se enfríe y meter al refrigerador hasta que
-                        cuaje bien
-                    </li>
-                    <li>
-                        Sacar la gelatina del recipiente y picarla en cuadros medianos
-                    </li>
-                    <li>
-                        Agregar el yogurt, revolver bien y listo
-                    </li>
-                </ol>
-            </div>
-        </div>
-
-        <div id="postre_2">
-            <h3>Pay de limon</h3>
-            <div>
-                <span>Ingredientes</span>
-                <ul>
-                    <li>3 limones</li>
-                    <li>1 barra de queso crema</li>
-                    <li>1 lata de leche evaporada</li>
-                    <li>1 lata de leche condensada</li>
-                    <li>3 paquetes de galletas Marias</li>
-                </ul>
-            </div>
-            <div>
-                <span>Preparacion</span>
-                <ol>
-                    <li>
-                        Colocar la barra de queso crema, la leche evaporada y la leche condensada en una licuadora y
-                        comenzar a licuar
-                    </li>
-                    <li>
-                        Mientras se licúa verter el jugo de los limones
-                    </li>
-                    <li>
-                        En un recipiente colocar una capa de galletas
-                    </li>
-                    <li>
-                        Vaciar un poco del contenido de la licuadora en el recipiente hasta cubrir las galletas
-                    </li>
-                    <li>
-                        Repetir los pasos 3 y 4 hasta que se termine la mezcla de la licuadora
-                    </li>
-                    <li>
-                        Refrigerar por al menos 4 horas, hasta que tenga una consistencia firme y listo
-                    </li>
+                    <li>Hervir el agua</li>
+                    <li>Agregar el polvo de gelatina al agua hirviendo y mover hasta que se mezcle bien el polvo</li>
+                    <li>Vaciar la mezcla en un recipiente, esperar a que se enfríe y meter al refrigerador hasta que
+                        cuaje bien</li>
+                    <li>Sacar la gelatina del recipiente y picarla en cuadros medianos</li>
+                    <li>Agregar el yogurt, revolver bien y listo</li>
                 </ol>
             </div>
 
 
-        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento 1</td>
+                        <td>elemento 2</td>
+                        <td>elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-        <div id="postre_3">
-            <h3></h3>
-            <div>
-                <span>Fresas con crema</span>
+        <article class="comida" id="postre_2">
+            <header>
+                <h3>Pay de limon</h3>
+            </header>
+            <div class="ingredientes">
+                <span>Ingredientes</span>
                 <ul>
-                    <li>1 kilo de fresas</li>
-                    <li>½ litro de crema</li>
-                    <li>1 lata de leche condensada </li>
+                    <li>
+                        <div>
+                            <p>3 limones</p>
+                            <img src="RECETARIO/IMAGENES/limones.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 barra de queso crema</p>
+                            <img src="RECETARIO/IMAGENES/quesoCrema.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 lata de leche evaporada</p>
+                            <img src="RECETARIO/IMAGENES/lecheEvaporada.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 lata de leche condensada</p>
+                            <img src="RECETARIO/IMAGENES/lecheCondensada.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>3 paquetes de galletas Marias</p>
+                            <img src="RECETARIO/IMAGENES/galletas.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div>
+            <div class="preparacion">
+                <span>Preparacion</span>
+                <ol>
+                    <li>Colocar la barra de queso crema, la leche evaporada y la leche condensada en una licuadora y
+                        comenzar a licuar</li>
+                    <li>Mientras se licúa verter el jugo de los limones</li>
+                    <li>En un recipiente colocar una capa de galletas</li>
+                    <li>Vaciar un poco del contenido de la licuadora en el recipiente hasta cubrir las galletas</li>
+                    <li>Repetir los pasos 3 y 4 hasta que se termine la mezcla de la licuadora</li>
+                    <li>Refrigerar por al menos 4 horas, hasta que tenga una consistencia firme y listo</li>
+                </ol>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento 1</td>
+                        <td>elemento 2</td>
+                        <td>elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="comida" id="postre_3">
+            <header>
+                <h3>Fresas con crema</h3>
+            </header>
+            <div class="ingredientes">
+                <span>Ingredientes</span>
+                <ul>
+                    <li>
+                        <div>
+                            <p>1 kilo de fresas</p>
+                            <img src="RECETARIO/IMAGENES/fresas.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>½ litro de crema</p>
+                            <img src="RECETARIO/IMAGENES/crema.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 lata de leche condensada</p>
+                            <img src="RECETARIO/IMAGENES/lecheCondensada.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="preparacion">
                 <span>Preparacion</span>
                 <ol>
                     <li>Lavar y desinfectar bien las fresas</li>
@@ -246,22 +575,62 @@
                     <li>Mezclar bien y listo</li>
                 </ol>
             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento 1</td>
+                        <td>elemento 2</td>
+                        <td>elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-
-        </div>
-
-        <div id="postre_4">
-            <h3>Ensalada de manzana</h3>
-            <div>
+        <article class="comida" id="postre_4">
+            <header>
+                <h3>Ensalada de manzana</h3>
+            </header>
+            <div class="ingredientes">
                 <span>Ingredientes</span>
                 <ul>
-                    <li>1 kilo de manzanas</li>
-                    <li>¼ de nuez picada</li>
-                    <li>1 litro de crema</li>
-                    <li>1 lata de leche condensada</li>
+                    <li>
+                        <div>
+                            <p>1 kilo de manzanas</p>
+                            <img src="RECETARIO/IMAGENES/manzanas.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>¼ de nuez picada</p>
+                            <img src="RECETARIO/IMAGENES/nuez.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 litro de crema</p>
+                            <img src="RECETARIO/IMAGENES/crema.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 lata de leche condensada</p>
+                            <img src="RECETARIO/IMAGENES/lecheCondensada.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div>
+            <div class="preparacion">
                 <span>Preparacion</span>
                 <ol>
                     <li>Lavar y picar las manzanas en cuadros pequeños</li>
@@ -269,26 +638,86 @@
                     <li>Mezclar bien y listo</li>
                 </ol>
             </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento 1</td>
+                        <td>elemento 2</td>
+                        <td>elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-        </div>
-
-        <div id="postre_5">
-
-            <h3>Arroz con leche</h3>
-            <div>
+        <article class="comida" id="postre_5">
+            <header>
+                <h3>Arroz con leche</h3>
+            </header>
+            <div class="ingredientes">
                 <span>Ingredientes</span>
                 <ul>
-                    <li>4 ½ Vasos de agua</li>
-                    <li>1 Raja de canela</li>
-                    <li>1 Taza de arroz </li>
-                    <li>1 Lata de leche condensada</li>
-                    <li>1 Lata de leche evaporada</li>
-                    <li>½ Taza de pasas</li>
-                    <li>1 Cucharada de canela molida</li>
-                    <li>6 Hojas de menta fresca desinfectadas</li>
+                    <li>
+                        <div>
+                            <p>4 ½ Vasos de agua</p>
+                            <img src="RECETARIO/IMAGENES/agua.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 Raja de canela</p>
+                            <img src="RECETARIO/IMAGENES/canela.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 Taza de arroz</p>
+                            <img src="RECETARIO/IMAGENES/arroz.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 Lata de leche condensada</p>
+                            <img src="RECETARIO/IMAGENES/lecheCondensada.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 Lata de leche evaporada</p>
+                            <img src="RECETARIO/IMAGENES/lecheEvaporada.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>½ Taza de pasas</p>
+                            <img src="RECETARIO/IMAGENES/pasas.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>1 Cucharada de canela molida</p>
+                            <img src="RECETARIO/IMAGENES/canelamolida.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>6 Hojas de menta fresca desinfectadas</p>
+                            <img src="RECETARIO/IMAGENES/menta.jpg" width=30% title="Arroz">
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div>
+            <div class="preparacion">
                 <span>Preparacion</span>
                 <ol>
                     <li>Calentar el agua con la raja de canela y cuando suelte el hervor, agrega el arroz</li>
@@ -298,11 +727,35 @@
                     <li>Decorar con las pasas, la canela molida y las hojas de menta.</li>
                 </ol>
             </div>
-        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Aportacion</th>
+                        <th>Unidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>elemento 1</td>
+                        <td>elemento 2</td>
+                        <td>elemento 3</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
 
-    </div>
 
-    <footer></footer>
+    </section>
+
+
+    <footer>
+        <p>Integrantes:</p>
+    </footer>
 
 </body>
 
